@@ -1,1 +1,1 @@
-MZWO wykład
+# Modelowanie Zwinnego Wytwarzania Oprogramowania

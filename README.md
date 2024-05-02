@@ -1,1 +1,0 @@
-MZWO wykład

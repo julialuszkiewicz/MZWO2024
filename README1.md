@@ -1,1 +1,0 @@
-## Spis obrazków:

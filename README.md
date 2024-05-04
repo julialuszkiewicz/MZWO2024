@@ -85,8 +85,8 @@ System kontroli wersji można opisać jako aplikację wspomagającą monitorowan
 Systemy kontroli wersji dzielą się na:
 lokalne, pozwalające na zapisanie danych jedynie na lokalnym komputerze, np. SCCS﻿ oraz RCS,
 scentralizowane, oparte na architekturze klient-serwer, np. CVS, Subversion,
-rozproszone, oparte na architekturze P2P (Peer to Peer), np. BitKeeper, Code Co-op﻿ Git, svk.
-Systemy VCS (Version Control System) zapewniają każdej osobie współtworzące kod ujednolicony i spójny widok projektu, wyświetlając prace, które są już w toku. Wgląd w przejrzystą historię zmian, kto ich dokonał i w jaki sposób przyczyniają się one do rozwoju projektu, pomaga członkom zespołu zachować spójność podczas niezależnej pracy.
+rozproszone, oparte na architekturze P2P (Peer to Peer), np. BitKeeper, Code Co-op﻿, Git, svk.
+Systemy VCS (Version Control System) zapewniają każdej osobie współtworzącej kod ujednolicony i spójny widok projektu, wyświetlając prace, które są już w toku. Wgląd w przejrzystą historię zmian, kto ich dokonał i w jaki sposób przyczyniają się one do rozwoju projektu, pomaga członkom zespołu zachować spójność podczas niezależnej pracy.
 W rozproszonym systemie kontroli wersji każdy deweloper ma pełną kopię projektu i jego historii. W przeciwieństwie do popularnych niegdyś scentralizowanych systemów kontroli wersji, DVCS nie wymagają stałego połączenia z centralnym repozytorium. 
 
 ### Git
@@ -96,6 +96,16 @@ Git jest najpopularniejszym rozproszonym systemem kontroli wersji. Git jest pows
 Git jest stosunkowo nowym narzędziem, które stanowi przykład tego jak potrzeba może stymulować innowacje. W 2005 roku twórca BitKeeper, narzędzia do kontroli wersji, używanego przez osoby rozwijające Linuksa, obwieścił iż jego oprogramowanie nie będzie już w pełni darmowe. W odpowiedzi na to Linus Torvalds i inni liderzy projektu postanowili opracować własne narzędzie do zarządzania wersjami, które będzie odznaczać się cechami BitKeepera, a jednocześnie będzie miało otwarty kod. W ten sposób powstał Git, który niezwykle szybko zdobył popularność. Co ciekawe, w 2016 roku BitKeeper stał się oprogramowaniem otwartym, choć wielu uważa, że ten krok nastąpił zbyt późno, by mogło ono konkurować z młodszym rywalem, jakim jest Git autorstwa Torvaldsa.
 ![Obrazek7](https://github.com/julialuszkiewicz/MZWO2024/assets/164729580/7832c04d-0380-4872-86c6-4673d38b41a1)
 ###### *Obrazek 7 - Linus Torvalds*
+
+### Git a Github
+Kluczową różnicą między Gitem a GitHubem jest to, że Git jest darmowym narzędziem kontroli wersji typu open source, które programiści instalują lokalnie na swoich komputerach osobistych, natomiast GitHub jest płatną usługą online stworzoną do uruchamiania Git w chmurze.
+Git to oprogramowanie. GitHub to internetowa usługa SaaS (Software as a Service). Jednak pomimo tego rozróżnienia, Git i GitHub nie są konkurencyjnymi ofertami. Zamiast tego współpracują ze sobą i wzajemnie się uzupełniają.
+Git to proste i łatwe w użyciu narzędzie do rozproszonej kontroli wersji.
+Programiści mogą wykonywać migawki swojego kodu w różnych momentach, tworząc historię wersji, która odwzorowuje proces tworzenia oprogramowania. (Deweloperzy mogą wspólnie udostępniać te migawki kodu lub zatwierdzenia dowolnej liczbie innych deweloperów z dowolnego miejsca na świecie.
+
+![Obrazek8](https://github.com/julialuszkiewicz/MZWO2024/assets/164729580/206cedbc-8773-4255-a034-6fb43c16425c)
+###### *Obrazek 8 - Git a Github*
+
 
 
 

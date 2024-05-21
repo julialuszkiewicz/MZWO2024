@@ -106,6 +106,28 @@ Programiści mogą wykonywać migawki swojego kodu w różnych momentach, tworz�
 ![Obrazek8](https://github.com/julialuszkiewicz/MZWO2024/assets/164729580/206cedbc-8773-4255-a034-6fb43c16425c)
 ###### *Obrazek 8 - Git a Github*
 
+### Branche
+Prawie każdy system kontroli wersji oferuje funkcję tworzenia gałęzi. Rozgałęzienie polega na odseparowaniu się od głównej linii rozwoju, umożliwiając kontynuację pracy bez wprowadzania chaosu do głównego projektu. W wielu narzędziach kontroli wersji jest to dość zasobożerny proces, który często wymaga stworzenia nowej kopii katalogu z kodem. W przypadku dużych projektów może to zajmować znaczną ilość czasu. Gałąź to niezależna ścieżka programowania. Służy jako warstwa abstrakcji dla edytowania, przechowywania i zatwierdzania zmian. Można ją postrzegać jako metodę na utworzenie nowego katalogu roboczego, strefy przejściowej i historii projektu. Nowe commity są zapisywane w historii aktualnej gałęzi, co powoduje rozgałęzienie (fork) w historii projektu.
+![Obrazek9](https://github.com/julialuszkiewicz/MZWO2024/assets/164729580/cb9b118e-cce5-426d-b2af-762ff138ed64)
+###### *Obrazek 9 - Branche*
+
+### Podstawowe polecenia w Gicie
+W celu dodawania plików na zdalne repozytorium programiści często korzystają z aplikacji - emulatora, który pozwala na wykonywanie poleceń zrozumiałych dla Gita (jeśli używają systemu operacyjnego Windows). Użytkownicy Linuxa lub MacOS nie muszą instalować emulatora. 
+Poniżej opisano kilka najważniejszych komend gitowych:
+- git init - tworzenie pustego repozytorium, 
+- git clone - pobieranie projektu ze zdalnego repozytorium, które znajduje się na platformie GitHub,
+- git checkout nazwa_brancha - przepięcie się na inną gałąź,
+- git status - podanie informacji na temat tego co aktualnie dzieje się w repozytorium,
+- git add ścieżka_do_pliku - dodanie pliku z lokalnej maszyny na zewnętrzne repozytorium, 
+- git commit -m "opis_commita" - “zapisanie” pliku z najnowszymi zmianami w kodzie z komentarzem, 
+- git push origin nazwa_brancha - wysłanie zmian do zewnętrznego repozytorium, 
+- git pull origin nazwa_brancha - pobranie aktualnej wersji brancha
+![Obrazek10](https://github.com/julialuszkiewicz/MZWO2024/assets/164729580/f94f8b3c-00f4-40c5-93e8-c324e31ef2d9)
+###### *Klonowanie repozytorium przy użyciu klucza SSH *
+
+
+
+
 
 
 

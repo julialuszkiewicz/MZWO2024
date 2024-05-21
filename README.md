@@ -97,7 +97,7 @@ Git jest stosunkowo nowym narzędziem, które stanowi przykład tego jak potrzeb
 ![Obrazek7](https://github.com/julialuszkiewicz/MZWO2024/assets/164729580/7832c04d-0380-4872-86c6-4673d38b41a1)
 ###### *Obrazek 7 - Linus Torvalds*
 
-### Git a Github
+#### Git a Github
 Kluczową różnicą między Gitem a GitHubem jest to, że Git jest darmowym narzędziem kontroli wersji typu open source, które programiści instalują lokalnie na swoich komputerach osobistych, natomiast GitHub jest płatną usługą online stworzoną do uruchamiania Git w chmurze.
 Git to oprogramowanie. GitHub to internetowa usługa SaaS (Software as a Service). Jednak pomimo tego rozróżnienia, Git i GitHub nie są konkurencyjnymi ofertami. Zamiast tego współpracują ze sobą i wzajemnie się uzupełniają.
 Git to proste i łatwe w użyciu narzędzie do rozproszonej kontroli wersji.
@@ -106,12 +106,12 @@ Programiści mogą wykonywać migawki swojego kodu w różnych momentach, tworz�
 ![Obrazek8](https://github.com/julialuszkiewicz/MZWO2024/assets/164729580/206cedbc-8773-4255-a034-6fb43c16425c)
 ###### *Obrazek 8 - Git a Github*
 
-### Branche
+#### Branche
 Prawie każdy system kontroli wersji oferuje funkcję tworzenia gałęzi. Rozgałęzienie polega na odseparowaniu się od głównej linii rozwoju, umożliwiając kontynuację pracy bez wprowadzania chaosu do głównego projektu. W wielu narzędziach kontroli wersji jest to dość zasobożerny proces, który często wymaga stworzenia nowej kopii katalogu z kodem. W przypadku dużych projektów może to zajmować znaczną ilość czasu. Gałąź to niezależna ścieżka programowania. Służy jako warstwa abstrakcji dla edytowania, przechowywania i zatwierdzania zmian. Można ją postrzegać jako metodę na utworzenie nowego katalogu roboczego, strefy przejściowej i historii projektu. Nowe commity są zapisywane w historii aktualnej gałęzi, co powoduje rozgałęzienie (fork) w historii projektu.
 ![Obrazek9](https://github.com/julialuszkiewicz/MZWO2024/assets/164729580/cb9b118e-cce5-426d-b2af-762ff138ed64)
 ###### *Obrazek 9 - Branche*
 
-### Podstawowe polecenia w Gicie
+#### Podstawowe polecenia w Gicie
 W celu dodawania plików na zdalne repozytorium programiści często korzystają z aplikacji - emulatora, który pozwala na wykonywanie poleceń zrozumiałych dla Gita (jeśli używają systemu operacyjnego Windows). Użytkownicy Linuxa lub MacOS nie muszą instalować emulatora. 
 Poniżej opisano kilka najważniejszych komend gitowych:
 - git init - tworzenie pustego repozytorium, 
@@ -123,7 +123,28 @@ Poniżej opisano kilka najważniejszych komend gitowych:
 - git push origin nazwa_brancha - wysłanie zmian do zewnętrznego repozytorium, 
 - git pull origin nazwa_brancha - pobranie aktualnej wersji brancha
 ![Obrazek10](https://github.com/julialuszkiewicz/MZWO2024/assets/164729580/f94f8b3c-00f4-40c5-93e8-c324e31ef2d9)
-###### *Klonowanie repozytorium przy użyciu klucza SSH *
+###### *Obrazek 10 - Klonowanie repozytorium przy użyciu klucza SSH*
+
+### SVN
+Subversion (znane również jako SVN) to system kontroli wersji stworzony jako następca CVS. SVN jest darmowym i otwartym oprogramowaniem, udostępnianym na licencji Apache. W przeciwieństwie do Gita jest to system lokalny. SVN pozwala kilku użytkownikom na jednoczesną pracę nad tym samym projektem, a także na łatwe powrócenie do wcześniejszych wersji plików w razie potrzeby. SVN jest zatem narzędziem niezbędnym dla wielu programistów i innych osób pracujących nad plikami tekstowymi.
+
+#### Historia SVN
+SVN został stworzony jako następca popularnego systemu CVS, który miał liczne wady i ograniczenia. Głównym celem SVN było zapewnienie lepszej wydajności, większej stabilności i bezpieczeństwa oraz prostszej obsługi. System ten został zaprojektowany z myślą o dużych projektach, w których wiele osób pracuje nad tym samym kodem źródłowym. Dzięki SVN każdy członek zespołu może śledzić zmiany, wprowadzać swoje poprawki i wersjonować kod w sposób uporządkowany i kontrolowany. W kolejnych latach SVN przeszedł liczne zmiany i ulepszenia, aż do osiągnięcia obecnej wersji 1.14. Pozostaje jednym z najpopularniejszych systemów kontroli wersji i jest szeroko wykorzystywany w wielu projektach na całym świecie.
+
+#### Jak działa SVN
+SVN działa na zasadzie centralnego repozytorium, do którego użytkownicy mogą przesyłać (commitować) nowe pliki lub zmieniać istniejące, a także pobierać najnowsze wersje plików (update). Każda zmiana w plikach jest rejestrowana i oznaczana unikalnym numerem rewizji, co umożliwia śledzenie historii zmian i ewentualne cofanie się do wcześniejszych wersji. SVN posiada również mechanizmy zarządzania konfliktami zmian, które mogą wystąpić, gdy dwóch użytkowników modyfikuje ten sam plik jednocześnie, oraz narzędzia do tworzenia i zarządzania gałęziami (branches) projektu.
+SVN jest dostępny na wielu platformach i systemach operacyjnych, w tym Windows, Linux, macOS i innych. Można korzystać z niego za pomocą wiersza poleceń lub za pomocą specjalnych narzędzi graficznych, takich jak TortoiseSVN czy SmartSVN. SVN jest również zintegrowany z wieloma środowiskami programistycznymi (IDE), takimi jak Eclipse, Visual Studio czy PyCharm, co umożliwia wygodne i efektywne korzystanie z niego w codziennej pracy. Jako system otwartoźródłowy dostępny za darmo, SVN jest atrakcyjnym wyborem dla wielu użytkowników.
+![Obrazek11](https://github.com/julialuszkiewicz/MZWO2024/assets/164729580/dee1477a-3b12-4a2b-b76a-3d1c12bc22e8)
+###### *Obrazek 11 - Logo SVN*
+
+#### Wady SVN
+Oprócz zalet, SVN ma również pewne wady i ograniczenia. Jako system oparty na centralnym repozytorium, wszystkie zmiany muszą być wprowadzane za jego pośrednictwem, co może stanowić problem, gdy repozytorium jest niedostępne lub gdy potrzebna jest szybka edycja pliku poza repozytorium. SVN nie pozwala również na tworzenie lokalnych kopii (tzw. "forks") projektu, co może utrudniać pracę nad różnymi gałęziami. W porównaniu do innych systemów kontroli wersji, takich jak Git, SVN może być mniej elastyczny i wolniejszy. Te aspekty warto rozważyć przy wyborze odpowiedniego systemu kontroli wersji dla swoich potrzeb.
+
+### Porównanie Git a SVN
+Git i SVN oferują różne podejścia do zarządzania kodem. Git jest bardziej elastyczny i wspiera pracę rozproszoną, podczas gdy SVN, będąc systemem scentralizowanym, jest bardziej odpowiedni dla projektów, które wymagają centralnego zarządzania. Wybór odpowiedniego systemu zależy od specyfiki projektu i potrzeb zespołu.
+
+## Podsumowanie
+W dzisiejszym dynamicznym środowisku tworzenia oprogramowania, zarządzanie kodem i efektywna współpraca zespołów są kluczowe dla sukcesu projektów. Referat omawia znaczenie kontroli wersji oraz różnorodne narzędzia wspierające kooperację w zespołach programistycznych. Przedstawiono zarówno klasyczne systemy kontroli wersji, jak i nowoczesne platformy do pracy rozproszonej, oferując praktyczne wskazówki i strategie zarządzania kodem. 
 
 
 
@@ -142,7 +163,18 @@ https://myloview.pl/fototapeta-cykl-zycia-oprogramowania-nr-555C5D0
 https://docs.github.com/en/get-started/using-git/about-git
 https://pl.wikipedia.org/wiki/System_kontroli_wersji
 https://www.w3schools.com/git/git_intro.asp?remote=github
+https://www.dobreprogramy.pl/git-system-kontroli-wersji-czyli-szara-eminencja-swiata-it,6628568271157377a](https://talentplace.pl/blog/dla-rekruterow/cykl-tworzenia-oprogramowania-czyli-co-warto-wiedziec-rekrutujac-w-it/
+https://myloview.pl/fototapeta-cykl-zycia-oprogramowania-nr-555C5D0
+https://docs.github.com/en/get-started/using-git/about-git
+https://pl.wikipedia.org/wiki/System_kontroli_wersji
+https://www.w3schools.com/git/git_intro.asp?remote=github
 https://www.dobreprogramy.pl/git-system-kontroli-wersji-czyli-szara-eminencja-swiata-it,6628568271157377a
+https://www.theserverside.com/video/Git-vs-GitHub-What-is-the-difference-between-them
+https://git-scm.com/book/pl/v2/Ga%C5%82%C4%99zie-Gita-Czym-jest-ga%C5%82%C4%85%C5%BA
+https://www.atlassian.com/pl/git/tutorials/using-branches
+https://pl.wikipedia.org/wiki/Subversion
+https://boringowl.io/blog/svn
+
 
 
 
